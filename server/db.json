@@ -1,0 +1,49 @@
+{
+  "Client": [
+    {
+      "idClient": 1,
+      "name": "Juan",
+      "dni": "79824732",
+      "email": "juan@hotmail.com",
+      "id-zone": "1",
+      "idClientDeals": 1
+
+    }
+  ],
+  "ClientDeals": [
+    {
+      "idClientDeals": 1,
+      "typeOfInterest": "efective",
+      "typeOfCredit": "future value",
+      "defaultInterestRate": 0.2,
+      "creditLimit": 10000,
+      "accountBalance": 1000,
+      "monthlyDayPayment": "19"
+    }
+  ],
+  "EstablishmentsAccounts": [
+    {
+      "idEstablishmentAccount": "1",
+      "userName": "tambo",
+      "password": "1234"
+    }
+  ],
+  "Payments":[
+    {
+      "idPayment": 1,
+      "amount": 1000,
+      "details": "payment of the month",
+      "date": "2020-10-19",
+      "idClient": 1
+    }
+  ],
+  "Consumption":[
+    {
+      "dConsumption": 1,
+      "productName": "Inca Cola",
+      "date": "2020-10-22",
+      "interest": 1.7,
+      "idClient": 1
+    }
+  ]
+}
