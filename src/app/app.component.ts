@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'final-project';
+  title = 'MtPlatform';
+  options = [
+    {path: '/home', title: 'Home'},
+  ]
 }
