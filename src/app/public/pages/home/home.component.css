@@ -12,3 +12,39 @@
   background-position: center; /* centra la imagen en el área de fondo */
   background-repeat: no-repeat; /* que no se repita la imagen */
 }
+
+h1{
+  font-size: 3rem;
+  color: #d980f9;
+}
+h2{
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.buttons-container button{
+  margin: 0.3rem;
+}
+.buttons-container{
+  display:flex;
+  margin-left: 12.3rem;
+  grid-row: 2/3;
+}
+.headers-container h1,
+.headers-container h2,
+.headers-container p{
+  margin:3rem 0;
+}
+
+.headers-container{
+text-align: left;
+margin-left: 12.4rem;
+}
+.headers-container h2 {
+  line-height: 1.3; /* Ajusta este valor para cambiar la separación entre las líneas */
+}
+.total-container{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+margin-top: 26rem;
+}
