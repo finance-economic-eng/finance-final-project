@@ -9,5 +9,6 @@ export class AppComponent {
   title = 'MtPlatform';
   options = [
     {path: '/home', title: 'Home'},
+    {path: 'register', title: 'Register'}
   ]
 }

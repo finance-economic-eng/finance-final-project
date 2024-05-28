@@ -1,3 +1,14 @@
-.home{
-  background-image: url("../../../../assets/proof.jpg");
+
+.home {
+  height: 100vh; /* altura al 100% de la altura de la ventana del navegador */
+  display: flex; /* caja flexible para centrar el contenido verticalmente */
+  flex-direction: column; /* alinea el contenido verticalmente */
+  justify-content: center; /* centra verticalmente el contenido */
+  align-items: center; /* centra horizontalmente el contenido */
+  text-align: center; /* centra el texto horizontalmente */
+  color: white;
+  background-image: url("../../../../assets/proof.jpg"); /*  imagen de fondo */
+  background-size: cover; /* cubre toda el área de fondo disponible */
+  background-position: center; /* centra la imagen en el área de fondo */
+  background-repeat: no-repeat; /* que no se repita la imagen */
 }
