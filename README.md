@@ -1,8 +1,6 @@
 # MTCUENTA
-
-
 ## Summary
-
+Finance web application to manage costumer accounts. I am using Angular Framework
 
 ## Features
 -Material Design

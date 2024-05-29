@@ -1,8 +1,11 @@
+<!--Barra de navegacion-->
 <mat-toolbar color="primary">
   <h1>MT PLATFORM</h1>
   <div class="mat-spacer"></div>
+
   <a mat-button *ngFor="let option of options" [routerLink]="option.path">
     {{option.title}}
   </a>
 </mat-toolbar>
+<!--router para cambiar las vistas-->
 <router-outlet></router-outlet>
