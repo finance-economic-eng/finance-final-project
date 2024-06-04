@@ -7,7 +7,14 @@
       "email": "juan@hotmail.com",
       "idZone": "1",
       "idClientDeals": "1"
-
+    },
+    {
+      "id": "2",
+      "name": "Hector",
+      "dni": "1234594",
+      "email": "hector@hotmail.com",
+      "idZone": "1",
+      "idClientDeals": "1"
     }
   ],
   "ClientDeals": [
@@ -28,7 +35,7 @@
       "password": "1234"
     }
   ],
-  "Payments":[
+  "Payments": [
     {
       "id": "1",
       "amount": 1000,
@@ -37,7 +44,7 @@
       "idClient": 1
     }
   ],
-  "Consumption":[
+  "Consumption": [
     {
       "id": "1",
       "productName": "Inca Cola",

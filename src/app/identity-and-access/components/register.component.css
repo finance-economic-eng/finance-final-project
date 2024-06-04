@@ -210,3 +210,13 @@ body{
 .container{
 margin: 6.4rem 23rem;
 }
+
+.container .icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+.container .button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}

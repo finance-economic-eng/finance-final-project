@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import {ClientsService} from "./mt-platform/services/clients.service";
+import {ClientsService} from "./costumer-mangement/services/clients.service";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatInputModule} from "@angular/material/input";
 import {HttpClientModule} from "@angular/common/http";
@@ -19,7 +19,7 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import { HomeComponent } from './public/pages/home/home.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
 import {MatButtonModule} from "@angular/material/button";
-import { RegisterComponent } from './user/register/register.component';
+import { RegisterComponent } from './identity-and-access/components/register.component';
 
 @NgModule({
   declarations: [

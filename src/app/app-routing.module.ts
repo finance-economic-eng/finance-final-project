@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from "./public/pages/home/home.component";
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
-import {RegisterComponent} from "./user/register/register.component";
+import {RegisterComponent} from "./identity-and-access/components/register.component";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
