@@ -1,11 +1,11 @@
 {
-  "Client": [
+  "clients": [
     {
       "id": "1",
       "name": "Juan",
       "dni": "79824732",
       "email": "juan@hotmail.com",
-      "idZone": "1",
+      "Zone": "Jesus Maria",
       "idClientDeals": "1"
     },
     {
@@ -13,8 +13,15 @@
       "name": "Hector",
       "dni": "1234594",
       "email": "hector@hotmail.com",
-      "idZone": "1",
+      "Zone": "San Isidro",
       "idClientDeals": "1"
+    },
+    {
+      "id": "20ea",
+      "name": "Franz",
+      "dni": "Juan",
+      "email": "janielfranz09@gmail.com",
+      "zone": "Ayacucho"
     }
   ],
   "ClientDeals": [

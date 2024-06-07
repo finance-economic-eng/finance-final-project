@@ -1,1 +1,30 @@
-<p>client-create-and-edit works!</p>
+<h2>{{editMode ? 'Edit Client' : 'New Client'}}</h2>
+<div class="form-section">
+  <form (submit)="onSubmit()" #clientForm = 'ngForm' class="form-row">
+    <mat-form-field>
+      <input matInput placeholder="Nombre" name="name" required [(ngModel)] = "client.name">
+    </mat-form-field>
+
+    <mat-form-field id="dni-form-field">
+      <input matInput placeholder="DNI" name="dni" required [(ngModel)] = "client.dni">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input  matInput placeholder="Email" name="email" required [(ngModel)] = "client.email">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input  matInput placeholder="Zone" name="zone" required [(ngModel)] = "client.zone">
+    </mat-form-field>
+
+    <ng-container *ngIf="editMode; else elseTemplate">
+      <button mat-raised-button color="primary">Update</button>
+      <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+    </ng-container>
+
+    <ng-template #elseTemplate>
+      <button mat-raised-button color="primary">Add</button>
+    </ng-template>
+
+  </form>
+</div>

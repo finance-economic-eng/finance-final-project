@@ -3,7 +3,7 @@ export class Client {
   name: string;
   dni: string;
   email: string;
-  idZone: number;
+  zone: string;
   idClientDeals: number;
 
   constructor() {
@@ -11,7 +11,7 @@ export class Client {
     this.name = '';
     this.dni = '';
     this.email = '';
-    this.idZone = 0;
+    this.zone = '';
     this.idClientDeals = 0;
   }
 }

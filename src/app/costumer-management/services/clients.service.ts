@@ -8,7 +8,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class ClientsService extends BaseService <Client>{
 
-  constructor(http:HttpClient) {
+  constructor(http: HttpClient) {
     super(http);
     this.resourceEndpoint = "/clients";
   }

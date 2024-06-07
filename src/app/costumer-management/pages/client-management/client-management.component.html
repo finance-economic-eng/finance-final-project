@@ -1,1 +1,51 @@
-<p>client-management works!</p>
+<div class="table-wrapper">
+  <h1>Clients</h1>
+<!--  Edit form-->
+  <app-client-create-and-edit (editCanceled)="onCancelEdit()"
+                              (clientAdded)="onClientAdded($event)"
+                              (clientUpdated)="onClientUpdated($event)"
+                              [editMode] ="isEditMode"
+                              [client]="clientData"/>
+
+<!--Data table -->
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+    <ng-container matColumnDef="id">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>#Id</th>
+      <td *matCellDef="let element" mat-cell>{{ element.id }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>Name</th>
+      <td *matCellDef="let element" mat-cell>{{ element.name }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="dni">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>DNI</th>
+      <td *matCellDef="let element" mat-cell>{{ element.dni }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>Email</th>
+      <td *matCellDef="let element" mat-cell>{{ element.email }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="zone">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>Zone</th>
+      <td *matCellDef="let element" mat-cell>{{ element.zone }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th *matHeaderCellDef mat-header-cell>Actions</th>
+      <td *matCellDef="let element" mat-cell>
+        <a (click)="onEditItem(element)" href="javascript:void(0)"> <mat-icon>edit</mat-icon></a>
+        <a (click)="onDeleteItem(element)" href="javascript:void(0)"> <mat-icon>delete</mat-icon></a>
+      </td>
+    </ng-container>
+
+    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+    <tr *matRowDef="let row; columns:displayedColumns" [ngClass]="{'editable-row': clientData.id == row.id}" mat-row></tr>
+  </table>
+  <!--paginator child component-->
+  <mat-paginator [pageSizeOptions]="[5,10,15]" [pageSize]="5" showFirstLastButtons></mat-paginator>
+
+</div>
